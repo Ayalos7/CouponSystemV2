@@ -1,0 +1,3 @@
+In this project, all controllers send data in body, not header. 
+This is due to a choice of not enabling exposed headers in cors.configuration.
+In my full project exposed headers are enabled and the controllers send data in header.

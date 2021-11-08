@@ -29,7 +29,6 @@ public class Customer {
     @Column(nullable = false, length = 100, unique = true)
     private String email;
     private String password;
-    //JOINCOLUMN JOINTABLE SINGULAR
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Coupon> coupons;
 }

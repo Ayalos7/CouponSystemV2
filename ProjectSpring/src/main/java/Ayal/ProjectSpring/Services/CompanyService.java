@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-//ADDED PROTECTION - COMPANY CAN'T DELETE COUPONS THAT BELONGS TO ANOTHER COMPANY
+
 @Service
 @RequiredArgsConstructor
 public class CompanyService {

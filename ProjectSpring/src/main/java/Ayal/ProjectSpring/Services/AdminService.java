@@ -21,7 +21,7 @@ public class AdminService {
     private final CouponRepo couponRepo;
 
     public Boolean login(String email, String password) {
-        return (email.equals("admin@admin.com") && password.equals("admin"));
+        return (email.equals("************") && password.equals("*****"));
     }
 
     public void addCompany(Company company) throws AdminApiResponseException {

@@ -32,7 +32,7 @@ public class AdminCLR implements CommandLineRunner {
             start();
         }
         System.out.println("Trying to log with correct details\n----------");
-        if (loginManager.login(ClientType.Administrator, "admin@admin.com", "admin")) {
+        if (loginManager.login(ClientType.Administrator, "*****@*****.***", "*****")) {
             start();
         }
     }

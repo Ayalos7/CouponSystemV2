@@ -147,7 +147,6 @@ public class CompanyApiProgram extends ClientController {
         UserDetails userDetails = new UserDetails();
         userDetails.setEmail(jwtUtils.extractEmail(token));
         userDetails.setUserType((String) jwtUtils.extractAllClaims(token).get("userType"));
-        //send ok with header of new token
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.set("Authorization", jwtUtils.generateToken(userDetails));
         return httpHeaders;
@@ -158,7 +157,6 @@ public class CompanyApiProgram extends ClientController {
         UserDetails userDetails = new UserDetails();
         userDetails.setEmail(jwtUtils.extractEmail(token));
         userDetails.setUserType((String) jwtUtils.extractAllClaims(token).get("userType"));
-        //send ok with header of new token
         return jwtUtils.generateToken(userDetails);
     }
 }

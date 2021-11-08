@@ -85,7 +85,7 @@ public class CustomerService {
     }
 
 
-    //No need for this now, implemented in another way
+    //it's implemented in another way
     public void updateCouponAmount(Coupon coupon)  {
 
         Coupon couponToBeUpdated = couponRepo.getOne(coupon.getId());
